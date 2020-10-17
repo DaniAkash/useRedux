@@ -1,10 +1,10 @@
 {
-  "name": "useredux",
-  "version": "1.0.0",
+  "name": "@daniakash/useRedux",
+  "version": "0.0.1",
   "description": "Hook to connect redux store to react components",
   "author": "DaniAkash",
   "license": "MIT",
-  "repository": "DaniAkash/useredux",
+  "repository": "DaniAkash/useRedux",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.8"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
