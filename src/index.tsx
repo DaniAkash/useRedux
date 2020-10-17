@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
-import type { AnyAction, Store } from 'redux'
+import { Store } from 'redux'
 
-const useRedux = <K extends Store<any, AnyAction>>(store: K, key?: string) => {
+function useRedux<K>(store: Store<K>, key?: undefined): K
+function useRedux<K, T extends keyof K>(store: Store<K>, key: T): K[T]
+function useRedux(store: any, key: any) {
   const [state, setState] = useState(() => {
     if (key) {
       return store.getState()[key]
