@@ -129,6 +129,11 @@ To make your component subscribe to updates only on the todosReducer ﹣
 const todos = useRedux(store, 'todos')
 ```
 
+## Examples
+
+- [Counter](https://codesandbox.io/s/useredux-counter-gj3pk)
+- [Todo List App](https://codesandbox.io/s/useredux-todo-app-6khdq)
+
 ## License
 
 MIT © [DaniAkash](https://github.com/DaniAkash)
