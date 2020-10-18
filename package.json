@@ -1,5 +1,5 @@
 {
-  "name": "@daniakash/useRedux",
+  "name": "@daniakash/useredux",
   "version": "0.0.1",
   "description": "Hook to connect redux store to react components",
   "author": "DaniAkash",
