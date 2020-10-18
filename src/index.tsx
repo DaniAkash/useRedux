@@ -13,13 +13,9 @@ function useRedux(store: any, key: any) {
 
   useEffect(() => {
     const unsubscribe = store.subscribe(() => {
-      if (key) {
-        const nextState = store.getState()[key]
-        if (state !== nextState) {
-          setState(nextState)
-        }
-      } else {
-        setState(store.getState())
+      const nextState = key ? store.getState()[key] : store.getState()
+      if (state !== nextState) {
+        setState(nextState)
       }
     })
     return () => {
