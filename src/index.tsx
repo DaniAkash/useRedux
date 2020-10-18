@@ -25,7 +25,7 @@ function useRedux(store: any, key: any) {
     return () => {
       unsubscribe()
     }
-  }, [store, key])
+  }, [store, key, state])
 
   return state
 }

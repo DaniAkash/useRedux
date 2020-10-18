@@ -1,10 +1,14 @@
-import React from 'react'
+import * as React from 'react'
+import Tasks from './Components/Tasks'
+import Footer from './Components/Footer'
+import InputField from './Components/InputField'
 
-import { ExampleComponent } from 'useredux'
-import 'useredux/dist/index.css'
-
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+export default function App() {
+  return (
+    <div className='App'>
+      <InputField />
+      <Tasks />
+      <Footer />
+    </div>
+  )
 }
-
-export default App
